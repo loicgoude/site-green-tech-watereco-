@@ -1,0 +1,41 @@
+/*
+Theme Name: oceanwp-child
+Theme URI:  
+Description:  Theme to support tutsplus tutorial. Child theme for the oceanwp theme.
+Author:  team simplon
+Textdomain: 
+Author URI:  
+Template: oceanwp
+Version:  1.0
+Tested up to: 5.5
+Requires PHP: 5.3 or higher
+License:  GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
+*/
+
+
+/* Plugins bouton CTA  */
+
+.loic_button {
+       border-radius: 2rem;
+       display: flex;
+       flex-wrap: wrap;
+       width: 100;
+       justify-content: center;
+       align-items: center;
+       background-color: #24aa1d;
+       color: #fff;
+       border-radius: 2rem;
+}
+
+.loic_button_title{
+  font-size: 1.5rem;    
+}
+
+.loic_button_title, .loic_button_shortcode_button {
+margin: 1.5rem;
+}
+
+.loic_button_text {
+color: #fff;
+}

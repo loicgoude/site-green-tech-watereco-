@@ -1,0 +1,53 @@
+
+Call to action certification WP :  
+shortcode:  [Product-cta id="xxx"]
+
+
+
+
+
+
+ajouter au style css child:
+
+/* Plugins bouton CTA  */
+
+.loic_button a:link, .loic_button a:visited {
+       border-radius: 2rem;
+       display: flex;
+       flex-wrap: wrap;
+       width: 100;
+       justify-content: center;
+       align-items: center;
+       background-color: #24aa1d;
+       color: #fff;
+       border-radius: 2rem;
+}
+
+.loic_button_title{
+  font-size: 1.5rem;    
+}
+
+.loic_button_title, .loic_button_shortcode_button {
+margin: 1.5rem;
+}
+
+.loic_button_text {
+color: #fff;
+}
+
+
+------------------------------------------------------------------------------------
+
+ajouter a index php child:
+
+
+
+
+add_shortcode( 'Product-cta', 'action_button_shortcode' );
+
+function action_button_shortcode( $atts ){
+       extract( shortcode_atts(array('title' => 'Voir le produit','text'=>'Produit','id'=>'https://www.eugeneapp.io/'),$atts));
+       $link = get_permalink($id)
+       return '<div class="loic_button"><p class="loic_button_title">'.$title.'</p><button class="loic_button_shortcode_button"><a href="'.$link.'"><span class="loic_button_text">'.text'
+}
+?>
